@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+.row, .row2, .row3{
+    display: block;
+}
+
+.azul, .verde, .naranjo3, .naranjo4{
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.azul{
+    background-color: royalblue;
+}
+.naranjo3, .naranjo4{
+    background-color: orange;
+}
+.verde{
+    background-color: greenyellow;
+}
+
+@media (min-width: 400px) and (max-width: 700px){
+    .row1, .row3{
+        display: flex;
+    }
+}
+
+@media (min-width: 701px){
+    .row1, .row3{
+        display: flex;
+    }
+    .row2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .naranjo3{
+        width: 50%;
+        margin: 0 auto;
+    }
+}

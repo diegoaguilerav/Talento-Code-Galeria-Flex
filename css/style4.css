@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+.row1, .row2, .row3, .row4, .row5, .row6{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.naranjo1, .naranjo2, .naranjo3, .verde4, .verde5, .verde6, .azul7, .azul8, .azul9, .negro10{
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.azul7, .azul8, .azul9{
+    background-color: royalblue;
+}
+
+.naranjo1, .naranjo2, .naranjo3{
+    background-color: orange;
+}
+
+.verde4, .verde5, .verde6{
+    background-color: greenyellow;
+}
+
+.negro10{
+    background-color: black;
+    border: 1px solid whitesmoke;
+}
+
+
+@media (min-width: 390px) and (max-width: 660px){
+    .row1{
+        justify-content: flex-end;
+    }
+    .row3{
+        flex-wrap: nowrap;
+    }
+    .row4{
+        justify-content: flex-end;
+    }
+    .row5{
+        justify-content: flex-start;
+    }
+    .row6{
+        justify-content: flex-end;
+    }
+    .naranjo1, .azul7{
+        width: 50%;
+    }
+    .naranjo2, .negro10{
+        width: 30%;
+    }
+    .naranjo3{
+        width: 90%;
+    }
+    .azul8{
+        width: 55%;
+    }
+}
+@media (min-width: 661px){
+    .row1{
+        justify-content: flex-end;
+    }
+    .row2{
+        justify-content: flex-end;
+    }
+    .row3{
+        flex-wrap: nowrap;
+    }
+    .row4{
+        justify-content: flex-end;
+    }
+    .row5{
+        flex-wrap: nowrap;
+    }
+    .naranjo1, .verde4, .azul7{
+        width: 90%;
+    }
+    .naranjo2, .verde5, .azul8{
+        width: 25%;
+    }
+    .naranjo3, .verde6, .azul9{
+        width: 75%;
+    }
+}

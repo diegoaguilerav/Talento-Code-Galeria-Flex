@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+article{
+    margin: 4rem 0;
+    color: violet;
+    font-size: 2rem;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width:100%;
+    border: 2px solid blueviolet;
+}
+
+.foto{
+    width: 100%;
+    border: 2px solid blueviolet;
+}
+
+.precio{
+    font-size: 1.5rem;
+}
+
+.galeria{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+
+@media (min-width: 500px) and (max-width: 750px){
+    .foto{
+        width: 50%;
+    }
+}
+
+@media (min-width: 751px){
+    .row{
+        flex-wrap: nowrap;
+    }
+}
